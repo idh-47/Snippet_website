@@ -7,7 +7,7 @@ body{
 }
 
 #hero{
-    background-image: linear-gradient(to right, rgba(3, 23, 47, 0.7), rgba(0, 0, 0, 0.1)),url('team-ux-designer-creative-graphic-planning-application-development-prototype-smartphone-layout_1246288-1275.avif');
+    background-image: linear-gradient(to right, rgba(3, 23, 47, 0.7), rgba(0, 0, 0, 0.1)),url('backg.avif');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -49,9 +49,8 @@ li:hover{
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 80px;
+    left: 110px;
     margin-top: 30px;
-    border: 1px white solid;
     height: 572px;
 }
 #text_h{
@@ -83,3 +82,10 @@ background-color: black;
     border: none;
 }
 
+
+@media (min-width : 100px) {
+    html{
+        overflow-x: hidden;
+        width: 100vw;
+    }
+}
