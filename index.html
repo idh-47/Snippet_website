@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <title>Snippet</title>
 </head>
@@ -11,19 +12,20 @@
     <section id="hero">
         <div id="nav_container">
             <img  id="logo" src="snippet_logo_200x40_white.png" width="230" height="45">
-            <nav>
+            <nav id="nav">
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Our Services</li>
-                    <li>Contact Us</li>
-                    <li>(+212) 663-212-790</li>
+                    <a href="#" style="text-decoration: none;"><li>Home</li></a>
+                    <a href="#" style="text-decoration: none;"><li>About Us</li></a>
+                    <a href="#" style="text-decoration: none;"><li>Our Services</li></a>
+                    <a href="#" style="text-decoration: none;"><li>Contact Us</li></a>
+                    <a href="#" style="text-decoration: none;"><li>(+212) 663-212-790</li></a>
                 </ul>
             </nav>
+            <i class="fa-solid fa-bars" id="fa" style="font-size: 35px; display: none;"></i>
         </div>
         <div id="hero-container">
-            <h1 id="text_h">We <br> Develop <br> Digital products</h1><br><br>
-            <p style="font-size: 23px; font-family: Arial, Helvetica, sans-serif; width: 750px; line-height: 35px;">We partner with companies, brands, and founders to build solutions that truly transform businesses and connect meaningfully to the people that use them.</p><br><br><br>
+            <h1 id="text_h">We <br> <span id="typewriter">Develop</span> <br> Digital products</h1><br><br>
+            <p style="font-size: 23px; font-family: Arial, Helvetica, sans-serif; width: 50vw; line-height: 35px;" id="para-1">We partner with companies, brands, and founders to build solutions that truly transform businesses and connect meaningfully to the people that use them.</p><br><br><br>
             <div id="btns-div">
                 <button class="btn" id="gs">Get Started</button>
                 <button class="btn" id="lm">Learn More</button>

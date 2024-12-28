@@ -22,13 +22,12 @@ body{
 }
 #logo{
     position: relative;
-    right: 90px;
+    left: -80px;
     cursor: pointer;
 }
 ul{
     width: 100%;
-    max-width: 700px;
-    padding: 0 20px;
+    max-width: 50vw;
     display: flex;
     justify-content: space-between;
 }
@@ -36,7 +35,7 @@ li{
     display: inline;
     list-style: none;
     color: white;
-    padding-left: 20px;
+    margin: 20px;
     font-size: 18px;
     font-family:Arial, Helvetica, sans-serif ;
     cursor: pointer;
@@ -48,14 +47,14 @@ li:hover{
 #hero-container{
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 110px;
+    margin-left: 110px;
     margin-top: 30px;
     height: 572px;
 }
 #text_h{
 font-size: 70px;
 font-family: Arial, Helvetica, sans-serif;
+animation: 1.5s fade ease-in-out 0s 1 alternate;
 }
 
 .btn{
@@ -68,11 +67,13 @@ font-family: Arial, Helvetica, sans-serif;
 }
 #gs{
     background-color: #3f86f9;
+    animation: 3s fade ease-in-out 0s 1 alternate;
 }
 #lm{
     background-color: rgba(255, 255, 255, 0);
     border: 1px white solid;
     margin-left: 5px;
+    animation: 3.5s fade ease-in-out 0s 1 alternate;
 }
 #gs:hover{
 background-color: black;
@@ -81,11 +82,62 @@ background-color: black;
     background-color: #3f86f9;
     border: none;
 }
-
+#para-1{
+    animation: 2.5s fade ease-in-out 0s 1 alternate;
+}
 
 @media (min-width : 100px) {
     html{
         overflow-x: hidden;
         width: 100vw;
+    }
+}
+@media (max-width : 645px) {
+    #text_h{
+        font-size: 40px;
+    }
+    #hero-container{
+        margin-left: 10px;
+    }
+    #logo{
+        left: -20px;
+        width: 150px;
+        height: auto;
+    }
+    #para-1 {
+        height: 220px;
+        font-size: 17px !important;
+        line-height: 27px !important;
+    }
+    #lm{
+        margin-top: 10px;
+        margin-left: -0.1px !important;
+    }
+}
+@media (max-width:810px) {
+    #nav{
+        display: none;
+    }
+    #fa{
+        display:block !important;
+        margin-right: 30px;
+    }
+    #nav_container{
+        justify-content: space-between;
+    }
+}
+
+@keyframes fade {
+    0%{
+
+            opacity: 0%;
+            position: relative;
+            top: 500px;
+    }
+
+    100%{
+            opacity: 100%;
+            position: relative;
+            top: 0px;
     }
 }
