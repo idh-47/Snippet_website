@@ -1,3 +1,6 @@
+:root{
+    --ff: Arial, Helvetica, sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -37,7 +40,7 @@ li{
     color: white;
     margin: 20px;
     font-size: 18px;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family:var(--ff) ;
     cursor: pointer;
 }
 li:hover{
@@ -53,7 +56,7 @@ li:hover{
 }
 #text_h{
 font-size: 70px;
-font-family: Arial, Helvetica, sans-serif;
+font-family: var(--ff);
 animation: 1.5s fade ease-in-out 0s 1 alternate;
 }
 
@@ -85,6 +88,76 @@ background-color: black;
 #para-1{
     animation: 2.5s fade ease-in-out 0s 1 alternate;
 }
+#btn3:hover{
+ background-color: black !important;
+}
+
+#txt-div-1{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+#pabout{
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 50px;
+ flex-wrap: wrap;
+}
+
+#photos{
+    margin-top: 50px;
+    width: 700px;
+    display: flex;
+}
+
+#txt-div-2{
+    width: 480px;
+}
+
+#afp::before{
+    display: inline-block;
+    content: "";
+    border-bottom: 3px solid #3f86f9;
+    width: 4rem;
+    transform: translateY(7px);
+    position: relative;
+    left: -8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width : 100px) {
     html{
@@ -94,13 +167,13 @@ background-color: black;
 }
 @media (max-width : 645px) {
     #text_h{
-        font-size: 40px;
+        font-size: 37px;
     }
     #hero-container{
-        margin-left: 10px;
+        margin-left: 24px;
     }
     #logo{
-        left: -20px;
+        left: -10px;
         width: 150px;
         height: auto;
     }
@@ -112,6 +185,35 @@ background-color: black;
     #lm{
         margin-top: 10px;
         margin-left: -0.1px !important;
+    }
+    .imgs{
+        width: 53vw !important;
+        height: auto !important;
+    }
+    #photos{
+        position: relative !important;
+        left: 15px !important;
+    }
+    #txt-div-2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    #afp{
+        width: 90vw;
+    }
+    #p-3{
+        width: 90vw !important;
+    }
+    .ps{
+        width: 90vw !important;
+    }
+    #p-2{
+        width: 70vw !important;
+        font-size: 18px !important;
+    }
+    #h-2{
+        width: 79vw !important;
+        font-size: 25px !important;
     }
 }
 @media (max-width:810px) {
@@ -127,7 +229,12 @@ background-color: black;
     }
 }
 
-@keyframes fade {
+@media (max-width: 1150px) {
+    #txt-div-2{
+        margin-top: 20px;
+    }
+}
+@keyframes fadee {
     0%{
 
             opacity: 0%;
