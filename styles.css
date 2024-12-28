@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+#hero{
+    background-image: linear-gradient(to right, rgba(3, 23, 47, 0.7), rgba(0, 0, 0, 0.1)),url('team-ux-designer-creative-graphic-planning-application-development-prototype-smartphone-layout_1246288-1275.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#nav_container{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px white solid;
+    height: 100px;
+    align-items: center;
+}
+#logo{
+    position: relative;
+    right: 90px;
+    cursor: pointer;
+}
+ul{
+    width: 100%;
+    max-width: 700px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    display: inline;
+    list-style: none;
+    color: white;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif ;
+    cursor: pointer;
+}
+li:hover{
+    color: cornflowerblue;
+}
+
+#hero-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 80px;
+    margin-top: 30px;
+    border: 1px white solid;
+    height: 572px;
+}
+#text_h{
+font-size: 70px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    width: 160px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#gs{
+    background-color: #3f86f9;
+}
+#lm{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px white solid;
+    margin-left: 5px;
+}
+#gs:hover{
+background-color: black;
+}
+#lm:hover{
+    background-color: #3f86f9;
+    border: none;
+}
+
