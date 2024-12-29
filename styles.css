@@ -258,7 +258,7 @@ background-color: black;
 }
 
 /*Animations*/
-@keyframes fadee {
+@keyframes fade {
     0%{
 
             opacity: 0%;
