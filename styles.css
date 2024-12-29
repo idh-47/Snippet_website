@@ -9,6 +9,8 @@ body{
     overflow-x: hidden;
 }
 
+/*Section 1*/
+
 #hero{
     background-image: linear-gradient(to right, rgba(3, 23, 47, 0.7), rgba(0, 0, 0, 0.1)),url('backg.avif');
     background-size: cover;
@@ -92,6 +94,9 @@ background-color: black;
  background-color: black !important;
 }
 
+
+/*Section 2*/
+
 #txt-div-1{
     width: 100vw;
     display: flex;
@@ -128,6 +133,35 @@ background-color: black;
     left: -8px;
 }
 
+/*Section 3*/
+
+#txt-div-3{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+#card-cont{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    width: 420px;
+    height: 480px;
+    border: 1px solid rgb(197, 195, 195);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.867);
+}
+
+.card:hover{
+    animation: 0.3s card ease-in-out 0s 1 forwards;
+}
 
 
 
@@ -135,29 +169,7 @@ background-color: black;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Responsive design*/
 
 @media (min-width : 100px) {
     html{
@@ -234,6 +246,8 @@ background-color: black;
         margin-top: 20px;
     }
 }
+
+/*Animations*/
 @keyframes fadee {
     0%{
 
@@ -246,5 +260,20 @@ background-color: black;
             opacity: 100%;
             position: relative;
             top: 0px;
+    }
+}
+
+@keyframes card{
+    0%{
+        scale: 1;
+        position: relative;
+        bottom: 0px;
+    }
+
+    100%{
+        scale: 1.02;
+        box-shadow: 4px 4px 5px rgb(201, 199, 199);
+        position: relative;
+        bottom: 5px;
     }
 }
