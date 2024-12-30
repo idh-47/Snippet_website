@@ -229,6 +229,9 @@ background-color: black;
         width: 79vw !important;
         font-size: 25px !important;
     }
+    #problems{
+        margin-top: 200px !important;
+    }
 }
 @media (max-width: 1255px) {
     #txt-div-2{
