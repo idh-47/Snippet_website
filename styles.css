@@ -160,13 +160,14 @@ background-color: black;
 }
 
 .card:hover{
-    animation: 0.3s card ease-in-out 0s 1 forwards;
+    animation: 0.2s card ease-in-out 0s 1 forwards;
 }
 
+.imgs:hover{
+    animation: 1s img ease-in-out 0s 1 forwards;
+}
 
-
-
-
+/*Section 4*/
 
 
 /*Responsive design*/
@@ -229,6 +230,21 @@ background-color: black;
         font-size: 25px !important;
     }
 }
+@media (max-width: 1255px) {
+    #txt-div-2{
+        margin-top: 20px;
+    }
+    #txt-div-3{
+        width: 90vw;
+        text-align: center;
+    }
+    #ideas{
+        height: 1300px !important;
+    }
+    #problems{
+        margin-top: 40px;
+    }
+}
 @media (max-width:810px) {
     #nav{
         display: none;
@@ -245,20 +261,18 @@ background-color: black;
         width: 94vw;
         height: 70vh;
     }
+    #ideas{
+        height: 1800px !important;
+    }
+    .rangee{
+        width: 90vw !important;
+    }
 }
 
-@media (max-width: 1150px) {
-    #txt-div-2{
-        margin-top: 20px;
-    }
-    #txt-div-3{
-        width: 90vw;
-        text-align: center;
-    }
-}
+
 
 /*Animations*/
-@keyframes fadee {
+@keyframes fade {
     0%{
 
             opacity: 0%;
@@ -286,5 +300,16 @@ background-color: black;
         box-shadow: 0px 0px 10px 10px rgb(240, 240, 240);
         position: relative;
         bottom: 10px;
+    }
+}
+@keyframes img{
+    0%{
+        scale: 1;
+    }
+
+    100%{
+        scale: 1.01;
+        /* box-shadow: 4px 4px 5px rgb(201, 199, 199); */
+        box-shadow: 0px 0px 3px 3px rgb(211, 211, 211);
     }
 }
