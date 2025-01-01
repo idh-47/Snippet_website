@@ -28,6 +28,23 @@
             </nav>
             <i class="fa-solid fa-bars" id="fa" style="font-size: 35px; display: none;"></i>
         </div>
+
+        <!-- Javasript nav bar -->
+        <div id="scroll-nav">
+            <img  id="logo" src="snippet_logo_200x40_white.png" width="230" height="45">
+            <nav id="nav">
+                <ul>
+                    <a href="#" style="text-decoration: none;"><li>Home</li></a>
+                    <a href="#" style="text-decoration: none;"><li>About Us</li></a>
+                    <a href="#" style="text-decoration: none;"><li>Our Services</li></a>
+                    <a href="#" style="text-decoration: none;"><li>Contact Us</li></a>
+                    <a href="#" style="text-decoration: none;"><li>(+212) 663-212-790</li></a>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars" id="fa" style="font-size: 35px; display: none;"></i>
+        </div>
+        <!-- Javasript nav bar -->
+
         <div id="hero-container">
             <h1 id="text_h">We <br> <span id="typewriter">Develop</span> <br> Digital products</h1><br><br>
             <p style="font-size: 23px; font-family: var(-ff); width: 50vw; line-height: 35px;" id="para-1">We partner with companies, brands, and founders to build solutions that truly transform businesses and connect meaningfully to the people that use them.</p><br><br><br>
@@ -38,7 +55,7 @@
         </div>
     </section>
 
-
+     <div id="mouse-e" style="height: 100px; width: 100%;"></div>
     <section id="service">
         <div id="txt-div-1">
             <h1  id="h-2" style="font-size: 42px; font-family: poppins; font-weight: 500; margin-left: 30px;">We are a full-service digital agency</h1>
@@ -113,14 +130,14 @@
     </section>
 
     <section id="city">
-        <div id="txt">
+        <div id="txt" style="text-align: center;">
             <h1 style="font-size: 40px; font-family: poppins;">Let's discuss how we can work together</h1>
             <p style="font-size: 18px; width: 495px; text-align: center; font-family: poppins; margin-top: 7px;">Ready to start your project? We would love to hear from you. Our team of experts is ready to help you bring your digital projects to life.</p>
         </div>
     </section>
 
     <section id="location" style="height: 500px; margin-top: 140px;">
-        <div id="txt-div-3">
+        <div id="txt-div-3" style="text-align: center;">
             <h1  id="h-2" style="font-size: 45px; font-family: poppins; font-weight: 600; margin-left: 30px;">CONTACT US, YOU WILL NOT BE DISAPPOINTED</h1>
             <p  id="p-2" style="width: 37vw; text-align: center; margin-top: 12px; font-family: poppins; color: grey; font-size: 17px;">Don't hesitate to get in touch with us – we would be happy to discuss your needs and goals in more detail. Contact us today and let's start a conversation!</p>
         </div><br><br>
@@ -148,6 +165,49 @@
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    
+    <footer style="background-color: #080c24; height: 500px; font-family: poppins; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+        <div style="color: #748494; height: 200px; width: 180px; display: flex; flex-direction: column;">
+            <img src="snippet_logo_200x40_white.png"  style="width: 300px; position: relative; right: 45px;"><br><br>
+            <a href="#" class="hoverable" class="links_f" style="text-decoration: none; color: #748494; margin-bottom: 5px;">(+212) 663-212-790</a>
+            <a href="#" class="hoverable" class="links_f" style="text-decoration: none; color: #748494;">contact@snippet.ma</a><br><br>
+            <div>
+                <i  class="fa-brands fa-square-twitter hoverable" style="font-size: 30px;" ></i>
+                <i class="fa-brands fa-linkedin hoverable"  style="font-size: 30px;"></i>
+            </div>
+        </div>
+
+        <div id="cont-txt" style="display: flex; flex-wrap: wrap; width: 800px; height: 200px; justify-content: space-evenly;">
+             
+            <div style="line-height: 32px; width: 120px; height: 200px;">
+                <h3 style="color: white;">Services</h3>
+                <p class="hoverable" style="color: #748494;">Consulting</p>
+                <p class="hoverable" style="color: #748494;">UX/UI Design</p>
+                <p class="hoverable" style="color: #748494;">Development</p>
+            </div>
+
+            <div style="line-height: 32px; width: 200px; height: 200px;">
+                <h3 style="color: white;">Use cases</h3>
+                <p class="hoverable" style="color: #748494;">Ecommerce</p>
+                <p class="hoverable" style="color: #748494;">Web & Mobile App</p>
+                <p class="hoverable" style="color: #748494;">3rd Party Integrations</p>
+            </div>
+
+            <div style="line-height: 32px; width: 150px; height: 200px;">
+                <h3 style="color: white;">About</h3>
+                <p class="hoverable" style="color: #748494;">Who we are</p>
+                <p class="hoverable" style="color: #748494;">Why choose us</p>
+                <p class="hoverable" style="color: #748494;">Our Process</p>
+                <p class="hoverable" style="color: #748494;">Contact us</p>
+            </div>
+
+        </div>
+
+        <div id="fot">
+            <div style="width: 85vw; height: 1px; border-bottom: 1px solid white;"></div>
+            <p style="color: white; font-family: poppins; margin-top: 8px;">© 2025 Snippet.</p>
+        </div>
+    </footer>
 </body>
+<script src="script.js"></script>
 </html>

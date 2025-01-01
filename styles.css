@@ -25,6 +25,18 @@ body{
     height: 100px;
     align-items: center;
 }
+
+#scroll-nav{
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    background-color: #080c24;
+    position: fixed;
+    top: 0px;
+    display: none;
+    width: 100%;
+    z-index: 10;
+}
 #logo{
     position: relative;
     left: -80px;
@@ -102,7 +114,6 @@ background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
 }
 
 
@@ -206,6 +217,21 @@ background-color: black;
 .card2:hover{
     animation: 0.2s card ease-in-out 0s 1 forwards;
 }
+
+/*footer*/
+.hoverable:hover{
+    cursor: pointer;
+    color: #3f86f9 !important;
+}
+
+#fot{
+    position: relative;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 /*Responsive design*/
 
 @media (min-width : 100px) {
@@ -294,6 +320,9 @@ background-color: black;
         font-size: 15px !important;
         width: 90vw !important;
     }
+    footer{
+        margin-top: 250px;
+    }
 }
 @media (max-width:810px) {
     #nav{
@@ -321,8 +350,15 @@ background-color: black;
     .rangee{
         width: 90vw !important;
     }
+    footer{
+        height: 790px !important;
+    }
 }
-
+@media (max-width:768px) {
+    footer{
+        margin-top: 500px !important;
+    }
+}
 
 
 /*Animations*/
