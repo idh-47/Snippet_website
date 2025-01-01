@@ -169,6 +169,23 @@ background-color: black;
 
 /*Section 4*/
 
+#city{
+    width: 100vw;
+    height: 50vh;
+    background-image:  linear-gradient( rgba(6, 30, 59, 0.7), rgba(5, 9, 44, 0.6)),url('city.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+#txt{
+    color: white;
+    height: 347px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*Responsive design*/
 
@@ -246,6 +263,17 @@ background-color: black;
     }
     #problems{
         margin-top: 40px;
+    }
+    #city{
+        margin-top: 500px !important;
+    }
+    #city h1{
+        font-size: 30px !important;
+        width: 90vw !important;
+    }
+    #city p{
+        font-size: 15px !important;
+        width: 90vw !important;
     }
 }
 @media (max-width:810px) {
