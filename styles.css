@@ -360,6 +360,15 @@ background-color: black;
     }
 }
 
+/*Menu Mobile*/
+#menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(82, 82, 82, 0.822);
+    position: absolute;
+    display: none;
+    justify-content: flex-end;
+}
 
 /*Animations*/
 @keyframes fade {

@@ -1,15 +1,15 @@
-// let btn = document.getElementById('menu');
+let btn = document.querySelector('i');
 // let del = document.getElementById('del');
-// let menu = document.querySelector('section');
+let menu = document.getElementById('menu');
 
-// function show(){
-//  menu.style.display = 'static';
-// }
-// function hide(){
-//     menu.style.display = 'none';
-// }
+function show(){
+ menu.style.display = 'flex';
+}
+function hide(){
+    menu.style.display = 'none';
+}
 
-// btn.addEventListener('click', show);
+btn.addEventListener('click', show);
 // del.addEventListener('click',hide);
 
 // nav bar configuration
